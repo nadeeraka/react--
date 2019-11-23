@@ -34,7 +34,7 @@ export const Logic = (): JSX.Element => {
 
   };
   const handelChecked =(s:string):void=>{
-    let filterdArray = todos.filter((data: ITodo) => data.text !== s);
+    let filterdArray:ITodo[] = todos.filter((data: ITodo) => data.text !== s);
     console.log(filterdArray);
     settodos(filterdArray);
     
